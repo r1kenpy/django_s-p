@@ -11,14 +11,14 @@
 
 {% block nav-sidebar %}{% endblock %}
 
-{% comment %} {% block content %}
+{% block content %}
 <div id="content-main">
   {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
 </div>
-{% endblock %} {% endcomment %}
-{% block content %}
-    <a href="polls/question/">Question</a>
 {% endblock %}
+{% comment %} {% block content %}
+    <a href="polls/question/">Question</a>
+{% endblock %} {% endcomment %}
 
 {% block sidebar %}
 <div id="content-related">
